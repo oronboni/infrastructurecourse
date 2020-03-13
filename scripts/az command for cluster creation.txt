@@ -1,0 +1,9 @@
+az login --service-principal -u <application client id> -p <application password>  --tenant <tenant id>
+
+az account set --subscription " <subscription id>”
+
+az group create --name MyManagedClusterRG --location eastus
+
+az aks create --resource-group  MyManagedClusterRG --name MyManagedCluster --generate-ssh-keys --kubernetes-version "1.15.7" --location eastus --node-osdisk-size 400 --node-vm-size Standard_DS4_v2 --load-balancer-sku standard --vm-set-type VirtualMachineScaleSets --enable-cluster-autoscaler --max-count 10 --min-count 5 --node-count 5 --service-principal <client id> --client-secret <secret>
+
+az aks get-credentials --resource-group MyManagedClusterRG --name MyManagedCluster
