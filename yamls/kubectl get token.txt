@@ -1,0 +1,9 @@
+kubectl get pods -n kube-system | findstr autoscaler (grep for Linux and Macs).
+
+kubectl exec -it -n kube-system <pod name> bash
+
+curl 'http://169.254.169.254/metadata/identity/oauth2/token?api-version=2018-02-01&resource=https%3A%2F%2Fstorage.azure.com%2F' -H Metadata:true
+
+P.S 
+To check token in MS use: aks.ms/jwt
+
