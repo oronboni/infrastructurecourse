@@ -5,10 +5,7 @@ metadata:
   namespace: mdatp
 spec:
   limits:
-  - default:
-      cpu: 100m
-      memory: 256Mi
-    defaultRequest:
+  - defaultRequest:
       cpu: 100m
       memory: 256Mi
     max:

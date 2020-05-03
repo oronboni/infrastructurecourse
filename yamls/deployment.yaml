@@ -34,8 +34,10 @@ spec:
     name: http 
   selector: 
     app: coffee 
+    
 --- 
 apiVersion: extensions/v1beta1 
+
 kind: Deployment 
 metadata: 
   name: tea 
