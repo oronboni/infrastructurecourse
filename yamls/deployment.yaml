@@ -43,7 +43,7 @@ metadata:
   name: tea 
   namespace: mdatp
 spec: 
-  replicas: 3 
+  replicas: 3
   selector: 
     matchLabels: 
       app: tea  

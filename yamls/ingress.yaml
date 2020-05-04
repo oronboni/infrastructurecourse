@@ -14,7 +14,8 @@ spec:
       - backend: 
           serviceName: coffee-svc 
           servicePort: 80 
-        path: /coffee   
+        path: /coffee
+        
 --- 
  
 apiVersion: extensions/v1beta1 
